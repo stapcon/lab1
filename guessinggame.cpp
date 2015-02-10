@@ -16,13 +16,6 @@ bool correct = false;
   cout << "Thinking of a number (1-100).  Guess? ";
   while(correct == false)
 {
-         if (tries == 2)
-          {
-            cout << "You have guessed too many times!" << endl;
-            correct = true;
-          }
-        else if(tries < 2)
-        {
         cin >> guess;
         tries++;
 
@@ -34,7 +27,7 @@ bool correct = false;
           } else {
                   cout << "Your guess is too low. Try again:" << endl;
           }
-        }
+        
   }
 
 }
